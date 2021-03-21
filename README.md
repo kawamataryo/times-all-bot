@@ -10,7 +10,9 @@
 
 ## セットアップ
 
-### Slackアプリの作成
+自分のワークスペースに導入するまでの方法です。
+
+### 1. Slackアプリの作成
 
 https://api.slack.com/apps にアクセスし、`Create New App`で新しいアプリを作成します。
 
@@ -31,7 +33,7 @@ https://api.slack.com/apps にアクセスし、`Create New App`で新しいア�
 
 以上でいったん Slack アプリ側の設定は完了です。
 
-### Lambdaへのデプロイ
+### 2. Lambdaへのデプロイ
 まず任意のディレクトリにプロジェクトをクローンします。
 
 ```
@@ -71,7 +73,7 @@ endpoints:
 # ...
 ```
 
-### Slackアプリでのエンドポイント登録
+### 3. Slackアプリでのエンドポイント登録
 
 最後にまた Slack アプリ側の設定です。
 Slack アプリの管理画面からサイドバーの`Event Subscriptions`にアクセスし、`Enable Events`のチェックを ON にしてイベント購読を有効化します。
